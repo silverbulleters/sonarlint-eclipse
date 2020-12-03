@@ -117,4 +117,4 @@
 
 Пример описания правила **DeprecatedMethodMessage**:
 
-![image-20201203135422144](images/image-20201203135422144.png)
+<img src="images/image-20201203135422144.png" alt="image-20201203135422144" style="zoom:80%;" />
