@@ -58,7 +58,7 @@
     <tycho.version>2.0.0</tycho.version>
     <tycho-extras.version>${tycho.version}</tycho-extras.version>
     <target.platform>2020-09</target.platform>
-    <sonarlint-core.version>4.14.1.22545</sonarlint-core.version>
+    <sonarlint-core.version>v4.14-bsl-SNAPSHOT</sonarlint-core.version>
     <protobuf.version>3.11.4</protobuf.version>
     <jacoco.version>0.8.5</jacoco.version>
 
@@ -76,12 +76,12 @@
   <!-- These dependencies will be added to the target platform -->
   <dependencies>
     <dependency>
-      <groupId>org.sonarsource.sonarlint.core</groupId>
+      <groupId>com.github.silverbulleters.sonarlint-core</groupId>
       <artifactId>sonarlint-core</artifactId>
       <version>${sonarlint-core.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.sonarsource.sonarlint.core</groupId>
+      <groupId>com.github.silverbulleters.sonarlint-core</groupId>
       <artifactId>sonarlint-client-api</artifactId>
       <version>${sonarlint-core.version}</version>
     </dependency>
@@ -96,6 +96,13 @@
       <version>3.15.0</version>
     </dependency>
   </dependencies>
+
+  <repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
 
   <build>
     <pluginManagement>
